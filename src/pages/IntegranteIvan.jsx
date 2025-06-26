@@ -12,6 +12,7 @@ import {
 } from "/src/components/PerfilStyle.jsx";
 import UncontrolledExample from "../components/carousel";
 import styled from "styled-components";
+import ProgressBar from "../components/ProgressBar";
 
 
 function IntegranteIvan() {
@@ -38,6 +39,16 @@ function IntegranteIvan() {
           <ListaItem>Git y GitHub</ListaItem>
         </Lista>
       </Seccion>
+      
+      <Seccion>
+        <h2>Nivel de Habilidades</h2>
+        <ProgressBar skill="JavaScript" level={85} />
+        <ProgressBar skill="React" level={80} />
+        <ProgressBar skill="Node.js" level={75} />
+        <ProgressBar skill="MongoDB" level={70} />
+        <ProgressBar skill="Git y GitHub" level={90} />
+      </Seccion>
+
 
       <Seccion>
         <h2>Proyectos</h2>

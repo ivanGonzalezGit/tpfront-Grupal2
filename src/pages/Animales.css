@@ -1,0 +1,41 @@
+.animales-contenedor {
+  text-align: center;
+  padding: 1rem;
+  margin-left: 120px; 
+}
+
+.buscador,
+.filtro {
+  background-color: #ffffff;
+  color: #1a2d4c;
+  border: 1px solid #485f88;
+}
+.buscador::placeholder {
+  color: #999;
+}
+
+
+.tarjetas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.tarjeta-animal {
+  width: 500px; 
+  min-height: 120px;
+  background-color: #b9cef8;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.tarjeta-animal:hover {
+  transform: scale(1.03);
+  border-color: #30007e;
+}

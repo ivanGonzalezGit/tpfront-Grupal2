@@ -70,3 +70,4 @@ export const ProyectoDescripcion = styled.p`
   font-size: 0.95rem;
   color: #555;
 `;
+

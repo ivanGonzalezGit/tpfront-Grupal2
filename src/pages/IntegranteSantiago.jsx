@@ -12,7 +12,7 @@ import {
 } from "/src/components/PerfilStyle.jsx";
 import UncontrolledExample from "../components/carousel";
 import styled from "styled-components";
-
+import ProgressBar from "../components/ProgressBar";
 
 function IntegranteSantiago() {
 
@@ -38,6 +38,19 @@ function IntegranteSantiago() {
           <ListaItem>Git y GitHub</ListaItem>
         </Lista>
       </Seccion>
+
+
+      <Seccion>
+        <h2>Nivel de Habilidades</h2>
+        <ProgressBar skill="MySQL" level={70} />
+        <ProgressBar skill="React" level={80} />
+        <ProgressBar skill="Node.js" level={75} />
+        <ProgressBar skill="Python" level={78} />
+        <ProgressBar skill="Git y GitHub" level={85} />
+      </Seccion>
+
+
+
 
       <Seccion>
         <h2>Proyectos</h2>

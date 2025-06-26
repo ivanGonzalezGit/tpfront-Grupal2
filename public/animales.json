@@ -1,18 +1,62 @@
 [
-{
+  {
     "id": 1,
-    "nombre": "Perro"
-},
-{
+    "nombre": "Max",
+    "especie": "Perro",
+    "edad": 3
+  },
+  {
     "id": 2,
-    "nombre": "Gato"
-},
-{
+    "nombre": "Luna",
+    "especie": "Gato",
+    "edad": 2
+  },
+  {
     "id": 3,
-    "nombre": "Caballo"
-},
-{
+    "nombre": "Toby",
+    "especie": "Perro",
+    "edad": 4
+  },
+  {
     "id": 4,
-    "nombre": "Cocodrilo"
-}
+    "nombre": "Milo",
+    "especie": "Gato",
+    "edad": 1
+  },
+  {
+    "id": 5,
+    "nombre": "Coco",
+    "especie": "Loro",
+    "edad": 2
+  },
+  {
+    "id": 6,
+    "nombre": "Nina",
+    "especie": "Perro",
+    "edad": 5
+  },
+  {
+    "id": 7,
+    "nombre": "Simba",
+    "especie": "Gato",
+    "edad": 3
+  },
+  {
+    "id": 8,
+    "nombre": "Lola",
+    "especie": "Conejo",
+    "edad": 2
+  },
+  {
+    "id": 9,
+    "nombre": "Rocky",
+    "especie": "Perro",
+    "edad": 4
+  },
+  {
+    "id": 10,
+    "nombre": "Mimi",
+    "especie": "Gato",
+    "edad": 3
+  }
 ]
