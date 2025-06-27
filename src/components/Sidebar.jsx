@@ -48,7 +48,10 @@ function Sidebar({isOpen}) {
     return(
         <Sidebar isOpen={isOpen}>
             <div>
-                <img src="/images/HuellitasFelices.png" alt="Logo Huellitas Felices" style={{ width: "245px" }} />
+                <img src="/HuellitasFelices.png" alt="Logo Huellitas Felices" style={{width: "245px"}}/>
+
+
+
             </div>
             <nav>
                 <SidebarList>
