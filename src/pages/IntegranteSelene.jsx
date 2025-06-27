@@ -10,7 +10,6 @@ import {
   ProyectoTitulo,
   ProyectoDescripcion,
 } from "/src/components/PerfilStyle.jsx";
-import UncontrolledExample from "../components/carousel";
 import styled from "styled-components";
 import ProgressBar from "../components/ProgressBar";
 
@@ -25,7 +24,6 @@ function IntegranteSelene() {
   `;
 
   return (
-    <Div>
     <PerfilWrapper>
       <Nombre>Selene Noma</Nombre>
 
@@ -74,10 +72,6 @@ function IntegranteSelene() {
         </ProyectosWrapper>
       </Seccion>
     </PerfilWrapper>
-
-    <UncontrolledExample />
-
-    </Div>
   );
 }
 

@@ -54,7 +54,7 @@ function Integrantes() {
             <Card>
                 <CardImage src="/pfp.png" alt="pfp" />
                 <div>
-                    <h3>Iván González</h3>
+                    <h3>Ivan González</h3>
                     <StyledLink to="/IntegranteIvan">Conocer más</StyledLink>
                 </div>
             </Card>

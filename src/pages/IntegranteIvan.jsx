@@ -10,7 +10,6 @@ import {
   ProyectoTitulo,
   ProyectoDescripcion,
 } from "/src/components/PerfilStyle.jsx";
-import UncontrolledExample from "../components/carousel";
 import styled from "styled-components";
 import ProgressBar from "../components/ProgressBar";
 
@@ -25,7 +24,6 @@ function IntegranteIvan() {
   `;
 
   return (
-    <Div>
     <PerfilWrapper>
       <Nombre>Iván González</Nombre>
 
@@ -74,8 +72,6 @@ function IntegranteIvan() {
         </ProyectosWrapper>
       </Seccion>
     </PerfilWrapper>
-    <UncontrolledExample />
-    </Div>
   );
 }
 

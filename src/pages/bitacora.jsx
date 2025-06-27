@@ -101,7 +101,7 @@ export default function Bitacora() {
               <Td>Estilos</Td>
             </tr>
             <tr>
-              <Td>Ivan Gonzáles</Td>
+              <Td>Ivan González</Td>
               <Td>Backend</Td>
               <Td>Integración de la API</Td>
             </tr>

@@ -1,58 +1,43 @@
+import React, { useState } from 'react';
+import './Carousel.css';
 
-import Carousel from 'react-bootstrap/Carousel';
+const Carousel = ({ images }) => {
+  const [currentIndex, setCurrentIndex] = useState(0);
 
-function UncontrolledExample() {
+  const prevSlide = () => {
+    setCurrentIndex((prev) =>
+      prev === 0 ? images.length - 1 : prev - 1
+    );
+  };
+
+  const nextSlide = () => {
+    setCurrentIndex((prev) =>
+      prev === images.length - 1 ? 0 : prev + 1
+    );
+  };
+
   return (
-    <Carousel>
-      <Carousel.Item>
-        <img
-          className="d-block"
-          style={{ 
-                  width: '500px', 
-                  marginTop: '50px'
-                }}
-          src="/images/foto_1.jpg"
-          alt="Foto Perro"
-        />
-        <Carousel.Caption>
-          <h3>First slide label</h3>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-        </Carousel.Caption>
-      </Carousel.Item>
-      <Carousel.Item>
-        <img
-          className="d-block"
-          style={{ 
-                  width: '500px', 
-                  marginTop: '50px' 
-                }}
-          src="/images/foto_2.jpg"
-          alt="Foto Gato"
-        />
-        <Carousel.Caption>
-          <h3>Second slide label</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </Carousel.Caption>
-      </Carousel.Item>
-      <Carousel.Item>
-        <img
-          className="d-block"
-          style={{ 
-                  width: '500px', 
-                  marginTop: '50px' 
-                }}
-          src="/images/foto_3.jpg"
-          alt="Foto Zorro"
-        />
-        <Carousel.Caption>
-          <h3>Third slide label</h3>
-          <p>
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-          </p>
-        </Carousel.Caption>
-      </Carousel.Item>
-    </Carousel>
+    <div className="carousel-container">
+      <button className="nav-button left" onClick={prevSlide}>
+        &#10094;
+      </button>
+      <div className="carousel-slide">
+        <img src={images[currentIndex]} alt={`Slide ${currentIndex}`} />
+      </div>
+      <button className="nav-button right" onClick={nextSlide}>
+        &#10095;
+      </button>
+      <div className="carousel-indicators">
+        {images.map((_, index) => (
+          <span
+            key={index}
+            className={`dot ${index === currentIndex ? 'active' : ''}`}
+            onClick={() => setCurrentIndex(index)}
+          ></span>
+        ))}
+      </div>
+    </div>
   );
-}
+};
 
-export default UncontrolledExample;
+export default Carousel;

@@ -10,7 +10,6 @@ import {
   ProyectoTitulo,
   ProyectoDescripcion,
 } from "/src/components/PerfilStyle.jsx";
-import UncontrolledExample from "../components/carousel";
 import styled from "styled-components";
 import ProgressBar from "../components/ProgressBar";
 
@@ -24,7 +23,6 @@ function IntegranteSantiago() {
   `;
 
   return (
-    <Div>
     <PerfilWrapper>
       <Nombre>Santiago Sandoval</Nombre>
 
@@ -76,10 +74,6 @@ function IntegranteSantiago() {
         </ProyectosWrapper>
       </Seccion>
     </PerfilWrapper>
-
-    <UncontrolledExample />
-
-    </Div>
   );
 }
 
